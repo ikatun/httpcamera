@@ -1,4 +1,4 @@
-package ikatun.zemris.hr.fer.httpcamera;
+package hr.fer.ikatun.httpcamera;
 
 import android.os.Environment;
 import android.util.Log;
@@ -14,6 +14,7 @@ public class ChunkyOutputManager {
     private Runnable onFirstChunkCompleted = null;
 
     private static File getOutputMediaFile(String name) {
+        File mediaStorageDir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/DCIM", "HttpCamera");
         if (! mediaStorageDir.exists()){
             if (! mediaStorageDir.mkdirs()){
                 Log.d("HttpCamera", "failed to create directory");

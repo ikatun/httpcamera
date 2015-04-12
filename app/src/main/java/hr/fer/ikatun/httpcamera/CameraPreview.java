@@ -1,4 +1,4 @@
-package ikatun.zemris.hr.fer.httpcamera;
+package hr.fer.ikatun.httpcamera;
 
 import android.content.Context;
 import android.hardware.Camera;
